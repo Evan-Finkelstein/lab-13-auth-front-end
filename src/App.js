@@ -50,13 +50,12 @@ export default class App extends Component {
                   <button onClick={this.logOut}>Log out</button>
                 </div>
                 : <>
-                  <Link to="/login"><div>log in</div></Link>
+                  <Link to="/"><div>log in</div></Link>
                   <Link to="/signup"><div>sign up</div></Link>
                 </>}
           </ul>
           <Switch>
-
-            <Route exact path='/login' render={(routerProps) =>
+            <Route exact path='/' render={(routerProps) =>
               <Login
                 {...routerProps}
                 changeTokenAndUsername={this.changeTokenAndUsername}
