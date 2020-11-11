@@ -8,7 +8,6 @@ import {
 import './App.css';
 import Login from './Login.js'
 import SignUp from './SignUp.js'
-import Home from './Home.js'
 import Todo from './Todo.js'
 import PrivateRoute from './PrivateRoute.js';
 
@@ -56,7 +55,7 @@ export default class App extends Component {
                 </>}
           </ul>
           <Switch>
-            <Route exact path='/' render={(routerProps) => <Home {...routerProps} />} />
+            <Route exact path='/' render={(routerProps) => <Login {...routerProps} />} />
             <Route exact path='/login' render={(routerProps) =>
               <Login
                 {...routerProps}
